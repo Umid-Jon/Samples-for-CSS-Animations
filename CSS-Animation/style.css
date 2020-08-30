@@ -1,0 +1,126 @@
+#main{
+    width: 1200px;
+    height: 600px;
+    border: 2px solid red;
+    margin: auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    animation-name: animation-1;   
+    animation-duration: 3s;        
+    animation-timing-function: ease-in-out;     
+    animation-iteration-count: infinite;      
+    animation-direction: alternate;          
+    animation-delay: 1s;         
+}
+
+
+@keyframes animation-1 {
+    from {
+       
+        background: yellow;
+        margin-left: 0px;
+    } 
+    to {
+          background: black;
+          margin-left: 1000px;
+    }
+}  
+
+
+#main-2{
+    width: 1200px;
+    height: 600px;
+    border: 2px solid red;
+    margin: 20px auto;
+}
+
+.box-2{
+    width: 200px;
+    height: 200px;
+    animation-name: animation-2;    
+    animation-duration: 5s;       
+    animation-timing-function: linear;      
+    animation-iteration-count: infinite;     
+    animation-direction: alternate;           
+    animation-play-state: paused;
+
+}
+
+#main-2:hover .box-2{
+    animation-play-state: running;
+}
+
+@keyframes animation-2 {
+    from {
+       
+        background: yellow;
+        margin-left: 0px;
+    } 
+    to {
+          background: black;
+          margin-left: 1000px;
+    }
+} 
+
+
+
+#main-3{
+    width: 1200px;
+    height: 600px;
+    border: 2px solid red;
+    margin: auto;
+    overflow: hidden;
+}
+
+.box-3{
+    width: 200px;
+    height: 200px;
+    animation-name: animation-3;    
+    animation-duration: 5s;       
+    animation-timing-function: linear;   
+    animation-iteration-count: infinite;     
+    animation-direction: alternate;           
+    animation-delay: 1s;        
+}
+
+
+
+@keyframes animation-3{
+    0% {
+       
+       background-image: url(./img/301157-1440x900.jpg);
+        margin-left: 0px;
+        background-size: cover;
+        width: 500px;
+        height: 600px;
+    } 
+    20% {
+         background-image: url(./img/357599-1440x900.jpg);
+         background-size: cover;
+        
+         
+    } 
+    40%{
+        background-image: url(./img/526478-1440x900.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(./img/570272-1440x900.jpg);
+        background-size: cover;
+       
+    }
+    80%{  background-image: url(./img/animal-africa-zoo-lion-33045.jpg);
+        background-size: cover;
+
+    }
+    100%{
+    background-image: url(./img/301157-1440x900.jpg);
+    background-size: cover;
+    margin-left: 1000px;
+    
+    }
+}  
